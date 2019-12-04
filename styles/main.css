@@ -1,0 +1,198 @@
+body {
+   width:100%;
+   /* max-height: 100vh; */
+   overflow-x: hidden;
+}
+
+.full_image {
+   width: 100%;
+}
+
+.underline_heading {
+   display:inline-block;
+   padding-bottom: 1%;
+   border-bottom: .2em solid #FF5218;
+}
+
+.navbar{
+   transition:500ms ease;
+ }
+
+.scrolled{
+   background:rgb(48, 48, 48);
+   
+ }
+
+ .scrolled a{
+   color:white;
+ }
+
+.section_container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 80vh;
+}
+
+.slide {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* .row{
+   position: relative;
+   z-index: 9999;
+} */
+
+i {
+   color: #FF5218;
+   font-size: 500%;
+}
+
+b{
+   color: #FF5218;
+}
+
+.orange-button{
+   background: #FF5218;
+   color:white;
+   font-weight: bold;
+}
+
+.orange-button:hover{
+   background: rgb(221, 73, 23);
+   color:white;
+}
+
+/********************** Section 1 CSS ***********************/
+
+#s1{
+   height:100vh;
+}
+
+.nav-link {
+   /* color: white; */
+   letter-spacing: 3px;
+   font-weight:600;
+   font-size:1.1em;
+   color: black;
+}
+
+.nav-link:hover {
+   color: #FF5218;
+}
+
+#logo {
+   max-height: 5vh;
+}
+
+.bg{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width:100vw;
+   height:100vh;
+   z-index:-5;
+}
+
+
+#waiting {
+   max-width: 90%;
+   max-height: 90%;
+   object-fit: contain;
+}
+
+/********************** Section 2 CSS ***********************/
+
+#s2 {
+   background: rgb(237, 245, 255);
+   text-align: center;
+}
+
+
+#progress_bar {
+   width: 0;
+   height: 40px;
+   background:#FF5218;
+}
+
+.steps img{
+   max-width: 50%;
+   max-height: 50%;
+   object-fit: contain;
+}
+
+.grow {
+   animation-name: progress_bar_grow;
+   animation-duration: 5.2s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes progress_bar_grow {
+   0% {
+      width: 0%;
+   }
+
+   20% {
+      width: 20%;
+   }
+
+   60% {
+      width: 50%;
+   }
+
+   100% {
+      width: 100%;
+   }
+}
+
+
+/********************** Section 3 CSS ***********************/
+
+#instant_loading {
+   width: 30%;
+   margin:auto;
+}
+
+/********************** Section 4 CSS ***********************/
+
+#s4 {
+   background: rgb(237, 245, 255);
+   text-align: center;
+   height:80vh;
+}
+
+#s4 .slide img {
+   max-width: 50%;
+   max-height: 50%;
+   object-fit: contain;
+}
+
+footer{
+   position: relative;
+   bottom: 0;
+   background: rgb(237, 245, 255);
+}
+
+/************************************ FOR MOBILE DEVICES ************************************/
+
+@media only screen and (max-width: 1280px) {
+
+   /********************** Section 1 CSS ***********************/
+
+   /********************** Section 2 CSS ***********************/
+
+   /* .progress {
+      top: -100%;
+      left:-10%;
+      width:200%;
+      transform: rotate(90deg);
+   } */
+
+
+   /********************** Section 3 CSS ***********************/
+
+
+   /********************** Section 4 CSS ***********************/
+}
